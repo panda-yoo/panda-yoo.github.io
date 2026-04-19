@@ -11,25 +11,23 @@ baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: default
 
-search: true
-timezone: Asia/Kolkata
 locale: en-US
+timezone: Asia/Kolkata
+
+search: true
 
 markdown: kramdown
 highlighter: rouge
+
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 permalink: /:categories/:title/
 
 include:
   - _pages
-
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
-
-paginate: 5
-paginate_path: /page:num/
 
 plugins:
   - jekyll-paginate
@@ -39,21 +37,29 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
+paginate: 5
+paginate_path: /page:num/
+
 author:
   name: "Pranav Shinde"
   avatar: "/assets/images/bio-photo.jpg"
   bio: "Physics student | Quantum Computing | CFD | ML"
   location: "India"
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/panda-yoo"
 
 footer:
   links:
-    - label: "GitHub"
+    - label: GitHub
       icon: "fab fa-fw fa-github"
       url: "https://github.com/panda-yoo"
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+  notes:
+    output: true
+    permalink: /notes/:path/
 
 defaults:
   - scope:
@@ -78,8 +84,16 @@ defaults:
       type: projects
     values:
       layout: single
-      author_profile: true
-      share: false
+      author_profile: false
+
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+      author_profile: false
+      toc: true
+      classes: wide
 
 category_archive:
   type: liquid

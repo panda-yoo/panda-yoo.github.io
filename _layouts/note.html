@@ -1,0 +1,84 @@
+---
+layout: single
+classes: wide
+author_profile: false
+toc: true
+---
+
+<style>
+/* Hide author/profile left sidebar */
+.sidebar,
+.author__avatar,
+.author__content,
+.author__urls-wrapper,
+.author__urls,
+.author__name,
+.author__bio {
+  display: none !important;
+}
+
+/* Make page full width */
+.initial-content,
+.page,
+.page__inner-wrap,
+.archive {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Left TOC sidebar */
+.sidebar__right {
+  position: fixed !important;
+  left: 0 !important;
+  top: 72px !important;
+  width: 300px !important;
+  height: calc(100vh - 72px);
+  overflow-y: auto;
+  background: #ffffff;
+  border-right: 1px solid rgba(0,0,0,0.08);
+  padding: 1rem;
+  z-index: 10;
+}
+
+/* Category title above TOC */
+.sidebar__right::before {
+  content: "{{ page.category | default: 'Notes' }}";
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Shift page content */
+.page__inner-wrap {
+  margin-left: 320px !important;
+  max-width: calc(100% - 320px) !important;
+  padding: 2rem;
+}
+
+/* Better article width */
+.page__content {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Mobile */
+@media screen and (max-width: 1024px) {
+  .sidebar__right {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+
+  .page__inner-wrap {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+}
+</style>
+
+{{ content }}
