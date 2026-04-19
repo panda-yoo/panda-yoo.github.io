@@ -1,9 +1,21 @@
 main:
-  - title: "Projects"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+
+  - title: "Projects"
+    url: /projects/
+    children:
+      - title: "Droplet Detection"
+        url: /projects/droplet-data/
+
+      - title: "Quantum Kernel SVM"
+        url: /projects/quantum-kernel-svm/
+
+      - title: "LBM CUDA"
+        url: /projects/lbm-cuda/
+
+  - title: "CV"
+    url: /cv/
+
+  - title: "Blog"
+    url: /posts/
