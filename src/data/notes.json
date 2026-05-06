@@ -14,5 +14,13 @@
     "icon": "Sigma",
     "color": "text-orange-600 dark:text-orange-400",
     "bg": "bg-orange-50 dark:bg-orange-900/20"
+  },
+  {
+    "folder": "Computer Science\\Programming",
+    "title": "Computer Science\\Programming",
+    "description": "Notes covering C++,Python to Design Patterns.",
+    "icon": "Binary",
+    "color": "text-orange-600 dark:text-orange-400",
+    "bg": "bg-orange-50 dark:bg-orange-900/20"
   }
 ]
