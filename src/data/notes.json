@@ -1,0 +1,18 @@
+[
+  {
+    "folder": "physics",
+    "title": "Physics Notes",
+    "description": "Notes covering statistical mechanics, non-equilibrium physics, and advanced quantum theory.",
+    "icon": "Atom",
+    "color": "text-indigo-600 dark:text-indigo-400",
+    "bg": "bg-indigo-50 dark:bg-indigo-900/20"
+  },
+  {
+    "folder": "Maths",
+    "title": "Maths Notes",
+    "description": "Notes covering mathematical logic, stochastic processes, and linear algebra.",
+    "icon": "Sigma",
+    "color": "text-orange-600 dark:text-orange-400",
+    "bg": "bg-orange-50 dark:bg-orange-900/20"
+  }
+]

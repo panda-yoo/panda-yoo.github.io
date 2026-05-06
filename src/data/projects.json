@@ -1,0 +1,86 @@
+[
+  {
+    "title": "Ising Model Simulation",
+    "description": "Implemented a 2D Ising model simulation using the Metropolis algorithm to study magnetization, spin interactions, and phase transition behavior in statistical physics systems.",
+    "tags": [
+      "Python",
+      "Statistical Physics",
+      "Monte Carlo",
+      "Ising Model",
+      "Computational Physics"
+    ],
+    "icon": "Atom",
+    "color": "text-red-600",
+    "bg": "bg-red-50 dark:bg-red-900/20",
+    "link": "#",
+    "github": "https://github.com/panda-yoo/ising_model",
+    "date": "2025-01-01"
+  },
+  {
+    "title": "Droplet Data Analysis",
+    "description": "Processed and analyzed simulation data related to droplet dynamics, including numerical datasets for fluid behavior, visualization, and computational experiments.",
+    "tags": [
+      "Python",
+      "Data Analysis",
+      "Fluid Dynamics",
+      "Scientific Computing"
+    ],
+    "icon": "Database",
+    "color": "text-emerald-600",
+    "bg": "bg-emerald-50 dark:bg-emerald-900/20",
+    "link": "#",
+    "github": "https://github.com/panda-yoo/droplet-data",
+    "date": "2025-02-01"
+  },
+  {
+    "title": "Quantum Kernel SVM Project",
+    "description": "Developed quantum machine learning models using Qiskit and Quantum Support Vector Machines (QSVM). Explored quantum kernels, parameterized quantum circuits, and hybrid quantum-classical classification techniques.",
+    "tags": [
+      "Quantum Computing",
+      "Qiskit",
+      "QSVM",
+      "Machine Learning",
+      "Python",
+      "IBM Quantum"
+    ],
+    "icon": "Cpu",
+    "color": "text-cyan-600",
+    "bg": "bg-cyan-50 dark:bg-cyan-900/20",
+    "link": "#",
+    "github": "https://github.com/panda-yoo/Quantum-kernel-SVM-Project",
+    "date": "2025-03-01"
+  },
+  {
+    "title": "Droplet Simulation",
+    "description": "Built numerical simulations for studying droplet motion and fluid dynamics using computational physics techniques and lattice-based modeling approaches.",
+    "tags": [
+      "Fluid Dynamics",
+      "Simulation",
+      "Python",
+      "Computational Physics"
+    ],
+    "icon": "Waves",
+    "color": "text-blue-600",
+    "bg": "bg-blue-50 dark:bg-blue-900/20",
+    "link": "#",
+    "github": "https://github.com/panda-yoo/droplet-simulation",
+    "date": "2025-04-01"
+  },
+  {
+    "title": "LBM Project",
+    "description": "Implemented fluid flow simulations using the Lattice Boltzmann Method (LBM), including D2Q9 lattice models, collision-streaming mechanics, and boundary condition handling.",
+    "tags": [
+      "LBM",
+      "Computational Fluid Dynamics",
+      "Fluid Simulation",
+      "Python",
+      "Physics"
+    ],
+    "icon": "Grid3X3",
+    "color": "text-violet-600",
+    "bg": "bg-violet-50 dark:bg-violet-900/20",
+    "link": "#",
+    "github": "https://github.com/panda-yoo/LBM_Project",
+    "date": "2025-05-01"
+  }
+]

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "katex/dist/katex.min.css";
+
+:root {
+  --bg: #F7F7F5;
+  --sidebar: #F1F2F4;
+  --card: #FFFFFF;
+
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6B7280;
+
+  --border: #E5E7EB;
+
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+  --accent-soft: #DBEAFE;
+
+  --hover: #E9EEF8;
+}
+
+.dark {
+  --bg: #0d1117;
+  --sidebar: #161b22;
+  --card: #161b22;
+
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted: #7d8590;
+
+  --border: #30363d;
+
+  --accent: #2f81f7;
+  --accent-hover: #58a6ff;
+  --accent-soft: rgba(47, 129, 247, 0.1);
+
+  --hover: #1c2128;
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-editorial: "Merriweather", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-theme-bg: var(--bg);
+  --color-theme-sidebar: var(--sidebar);
+  --color-theme-card: var(--card);
+  --color-theme-text: var(--text-primary);
+  --color-theme-text-secondary: var(--text-secondary);
+  --color-theme-text-muted: var(--text-muted);
+  --color-theme-border: var(--border);
+  --color-theme-accent: var(--accent);
+  --color-theme-accent-hover: var(--accent-hover);
+  --color-theme-accent-soft: var(--accent-soft);
+  --color-theme-hover: var(--hover);
+}
+
+@custom-variant dark (&:is(.dark *));
+
+/* Slim Modern Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1; /* zinc-300 */
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #94a3b8; /* zinc-400 */
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-thumb {
+    background-color: #475569; /* zinc-600 */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background-color: #64748b; /* zinc-500 */
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+.dark * {
+    scrollbar-color: #475569 transparent;
+}
+
+.dark .katex {
+    color: inherit;
+}
+
+.math-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0.5rem 0;
+}
+
+/* Markdown Table Styles */
+.prose table {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-collapse: collapse;
+    font-size: 0.95em;
+}
+
+.prose thead {
+    border-bottom: 2px solid var(--color-theme-border);
+}
+
+.prose th {
+    font-weight: 600;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    color: var(--color-theme-text);
+}
+
+.prose tbody tr {
+    border-bottom: 1px solid var(--color-theme-border);
+    transition: background-color 0.2s;
+}
+
+.prose tbody tr:hover {
+    background-color: var(--color-theme-hover);
+}
+
+.prose td {
+    padding: 0.75rem 1rem;
+    color: var(--color-theme-text-secondary);
+}
+
+.dark .prose table {
+    color: var(--color-theme-text-secondary);
+}
